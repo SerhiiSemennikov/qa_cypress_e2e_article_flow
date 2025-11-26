@@ -11,7 +11,7 @@ describe('test conduit site', () => {
     cy.log(title, description, body);
     cy.task('generateUser').then((user) => {
       cy.log(user.email, user.username, user.password);
-      cy.login(user.email, user.username, user.password);
+      // cy.login(user.email, user.username, user.password);
 
       // cy.createArticle(title, description, body);
 
@@ -53,7 +53,7 @@ describe('test conduit site', () => {
     cy.log(title, description, body);
     cy.task('generateUser').then((user) => {
       cy.log(user.email, user.username, user.password);
-      cy.login(user.email, user.username, user.password);
+      // cy.login(user.email, user.username, user.password);
 
       // cy.createArticle(title, description, body);
 
